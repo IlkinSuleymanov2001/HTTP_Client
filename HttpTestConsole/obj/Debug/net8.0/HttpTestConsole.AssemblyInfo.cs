@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HttpTestConsole")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bac7dc4662dab608f2ef0cd614d0c7f3d1bbd5f6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0ab17d280b665b46a4869df039f079f66603c431")]
 [assembly: System.Reflection.AssemblyProductAttribute("HttpTestConsole")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HttpTestConsole")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

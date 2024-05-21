@@ -8,6 +8,8 @@ namespace HttpTestConsole.RequestCreators
 
 		protected  delegate string BaseAddressDelegate();
 		private BaseAddressDelegate _addressDelegate;
+		private delegate string SetControlerAndAction();
+		private SetControlerAndAction _controlerAndAction;
 		protected delegate string MakeRequestDelegate();
 		private MakeRequestDelegate _makeRequestDelegate;
 		private  HttpMethod  _httpMethod;
@@ -16,12 +18,16 @@ namespace HttpTestConsole.RequestCreators
         public BaseRequestCreator()
         {
 			_makeRequestDelegate = GetRequest;
+			_httpMethod = HttpMethod.Get;
+			_controlerAndAction = SetUrlPath;
         }
 
         protected  void  SetBaseAddress(BaseAddressDelegate baseAddress)
 		{
 			_addressDelegate = baseAddress;
 		}
+
+
 
 		protected  string MakeRequest() 
 		{
@@ -38,8 +44,8 @@ namespace HttpTestConsole.RequestCreators
 			var baseAddress = _addressDelegate.Invoke();
 			var msg = new HttpRequestMessage()
 			{
-				Method = GetMethod(),
-				RequestUri = new Uri(baseAddress + GetUrlPath()),
+				Method = _httpMethod,
+				RequestUri = new Uri(baseAddress + _controlerAndAction.Invoke()),
 			};
 
 			var httpResponse = client.Send(msg);
@@ -57,8 +63,8 @@ namespace HttpTestConsole.RequestCreators
 
 			var msg = new HttpRequestMessage()
 			{
-				Method = GetMethod(),
-				RequestUri = new Uri(baseAddress + GetUrlPath()),
+				Method = _httpMethod,
+				RequestUri = new Uri(baseAddress + _controlerAndAction.Invoke()),
 				Content = new StringContent(JsonSerializer.Serialize(GetBody()))
 		};
 			var httpResponse = client.Send(msg);
@@ -76,7 +82,7 @@ namespace HttpTestConsole.RequestCreators
 
 			return _httpMethod = method;
 		}
-		public abstract string GetUrlPath();
+		public abstract string SetUrlPath();
 
 		public virtual object GetBody() 
 		{

@@ -16,16 +16,18 @@ namespace HttpTestConsole.RequestCreators
         {
 			SetBaseAddress(() => "https://jsonplaceholder.typicode.com/");
 			SetHttpMethod(HttpMethod.Get);
+
 		}
         public List<TestModel> GetModelsList() 
 		{
+
 			
 			var stringRes = MakeRequest();
 			return JsonSerializer.Deserialize<List<TestModel>>(stringRes);
 		}
 	
 
-		public override string GetUrlPath()
+		public override string SetUrlPath()
 		{
 			return "posts";
 		}

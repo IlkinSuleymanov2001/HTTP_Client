@@ -23,7 +23,7 @@ namespace HttpTestConsole.RequestCreators
 
 		}
 
-		public override string GetUrlPath()
+		public override string SetUrlPath()
 		{
 			return "posts";
 		}
