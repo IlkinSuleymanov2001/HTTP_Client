@@ -1,0 +1,15 @@
+C:\Users\ilkin\source\repos\ilkin\HttpTestConsole\HttpTestConsole\obj\Debug\net8.0\HttpTestConsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ilkin\source\repos\ilkin\HttpTestConsole\HttpTestConsole\obj\Debug\net8.0\HttpTestConsole.AssemblyInfoInputs.cache
+C:\Users\ilkin\source\repos\ilkin\HttpTestConsole\HttpTestConsole\obj\Debug\net8.0\HttpTestConsole.AssemblyInfo.cs
+C:\Users\ilkin\source\repos\ilkin\HttpTestConsole\HttpTestConsole\obj\Debug\net8.0\HttpTestConsole.csproj.CoreCompileInputs.cache
+C:\Users\ilkin\source\repos\ilkin\HttpTestConsole\HttpTestConsole\obj\Debug\net8.0\HttpTestConsole.sourcelink.json
+C:\Users\ilkin\source\repos\ilkin\HttpTestConsole\HttpTestConsole\bin\Debug\net8.0\HttpTestConsole.exe
+C:\Users\ilkin\source\repos\ilkin\HttpTestConsole\HttpTestConsole\bin\Debug\net8.0\HttpTestConsole.deps.json
+C:\Users\ilkin\source\repos\ilkin\HttpTestConsole\HttpTestConsole\bin\Debug\net8.0\HttpTestConsole.runtimeconfig.json
+C:\Users\ilkin\source\repos\ilkin\HttpTestConsole\HttpTestConsole\bin\Debug\net8.0\HttpTestConsole.dll
+C:\Users\ilkin\source\repos\ilkin\HttpTestConsole\HttpTestConsole\bin\Debug\net8.0\HttpTestConsole.pdb
+C:\Users\ilkin\source\repos\ilkin\HttpTestConsole\HttpTestConsole\obj\Debug\net8.0\HttpTestConsole.dll
+C:\Users\ilkin\source\repos\ilkin\HttpTestConsole\HttpTestConsole\obj\Debug\net8.0\refint\HttpTestConsole.dll
+C:\Users\ilkin\source\repos\ilkin\HttpTestConsole\HttpTestConsole\obj\Debug\net8.0\HttpTestConsole.pdb
+C:\Users\ilkin\source\repos\ilkin\HttpTestConsole\HttpTestConsole\obj\Debug\net8.0\HttpTestConsole.genruntimeconfig.cache
+C:\Users\ilkin\source\repos\ilkin\HttpTestConsole\HttpTestConsole\obj\Debug\net8.0\ref\HttpTestConsole.dll
