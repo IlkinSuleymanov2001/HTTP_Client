@@ -14,22 +14,19 @@ namespace HttpTestConsole.RequestCreators
 
         public GetRequestCreator()
         {
-			SetBaseAddress(() => "https://jsonplaceholder.typicode.com/");
-			SetHttpMethod(HttpMethod.Get);
-
-		}
+               SetBaseAddress(() => "https://jsonplaceholder.typicode.com/");
+	       SetHttpMethod(HttpMethod.Get);
+	}
         public List<TestModel> GetModelsList() 
-		{
-
-			
-			var stringRes = MakeRequest();
-			return JsonSerializer.Deserialize<List<TestModel>>(stringRes);
-		}
+	{	
+	   var stringRes = MakeRequest();
+	   return JsonSerializer.Deserialize<List<TestModel>>(stringRes);
+	}
 	
 
-		public override string SetUrlPath()
-		{
+	public override string SetUrlPath()
+	{
 			return "posts";
-		}
 	}
+   }
 }
